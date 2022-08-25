@@ -1,0 +1,15 @@
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\bin\Debug\net6.0\01-ValidadorDeRangos.exe
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\bin\Debug\net6.0\01-ValidadorDeRangos.deps.json
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\bin\Debug\net6.0\01-ValidadorDeRangos.runtimeconfig.json
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\bin\Debug\net6.0\01-ValidadorDeRangos.dll
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\bin\Debug\net6.0\01-ValidadorDeRangos.pdb
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.csproj.AssemblyReference.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.AssemblyInfoInputs.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.AssemblyInfo.cs
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.csproj.CoreCompileInputs.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.dll
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\refint\01-ValidadorDeRangos.dll
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.pdb
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\01-ValidadorDeRangos.genruntimeconfig.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\01-ValidadorDeRangos\01-ValidadorDeRangos\obj\Debug\net6.0\ref\01-ValidadorDeRangos.dll
