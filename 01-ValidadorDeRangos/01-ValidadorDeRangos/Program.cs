@@ -35,7 +35,7 @@ namespace _01_ValidadorDeRangos
             //Usando la libreria LINQ, puedo acceder a métodos de instancia como Max,Min, Average
             //Linq nos provee de métodos para recorrer arrays y colecciones de manera sencilla y facil
             //Documentación oficial sobre LINQ https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/concepts/linq/
-            //Video de youtube demostrando sus funcionalidades básicas https://www.youtube.com/watch?v=q0XoxNKeB3Q
+            //Video de youtube demostrando sus funcionalidades básicas https://www.youtube.com/watch?v=JNeFB_2YHrc
             //De esta manera podemos simplificar nuestro código sin armar el foreach y realizar la lógica de búsqueda del mayor o menor
             Console.WriteLine($"El número más grande es {numeros.Max()}");
             Console.WriteLine($"El número más chico es {numeros.Min()}");
