@@ -24,9 +24,12 @@ namespace _01_ValidadorDeRangos
                 numeros[i] = (numeroIngresado);
                 totalNumeros++;
             }
-            Array.ForEach(
-                numeros,n =>
-                    Console.WriteLine($"El número en la posición {numeros.GetEnumerator} es {n}"));
+            int posicion = 0;
+            foreach (var item in numeros)
+            {
+                Console.WriteLine($"El número en la posición {posicion} es {item}");
+                posicion++;
+            }
             Console.WriteLine($"El número más grande es {numeros.Max()}");
             Console.WriteLine($"El número más chico es {numeros.Min()}");
             Console.WriteLine($"El promedio de los números ingresados es {numeros.Average()}");
