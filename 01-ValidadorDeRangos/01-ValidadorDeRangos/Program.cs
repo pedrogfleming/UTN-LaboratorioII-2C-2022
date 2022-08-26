@@ -4,6 +4,8 @@ namespace _01_ValidadorDeRangos
 {
     public class Program
     {
+        // Consigna: https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/estaticos/Ejercicios/I01-validador-rangos/
+        // Version alternativa usando arrays y métodos Min,Max y Average
         static void Main(string[] args)
         {
             int totalNumeros = 0;
@@ -21,7 +23,7 @@ namespace _01_ValidadorDeRangos
                     input = Console.ReadLine();
                     esEntero = int.TryParse(input, out numeroIngresado);
                 }
-                numeros[i] = (numeroIngresado);
+                numeros[i] = numeroIngresado;
                 totalNumeros++;
             }
             int posicion = 0;
