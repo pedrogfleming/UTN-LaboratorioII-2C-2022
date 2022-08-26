@@ -26,6 +26,10 @@ namespace _01_ValidadorDeRangos
                 numeros[i] = numeroIngresado;
                 totalNumeros++;
             }
+            // El $ delante de las comillas y el uso de {posicion} se llama interpolación de string
+            // Se usa para no tener que concatenar el valor de las variables y hacer mas corto el string a mostrar por consola
+            //´concatenando se vería así:
+            // Console.WriteLine($"El número en la posición "+posicion+" es "+item);
             int posicion = 0;
             foreach (int item in numeros)
             {
