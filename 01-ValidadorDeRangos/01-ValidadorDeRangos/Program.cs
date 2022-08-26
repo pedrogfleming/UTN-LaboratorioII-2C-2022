@@ -27,7 +27,7 @@ namespace _01_ValidadorDeRangos
                 totalNumeros++;
             }
             int posicion = 0;
-            foreach (var item in numeros)
+            foreach (int item in numeros)
             {
                 Console.WriteLine($"El número en la posición {posicion} es {item}");
                 posicion++;
