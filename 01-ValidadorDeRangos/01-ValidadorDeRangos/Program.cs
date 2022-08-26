@@ -9,7 +9,7 @@ namespace _01_ValidadorDeRangos
         static void Main(string[] args)
         {
             int totalNumeros = 0;
-            //Declaro un array y lo inicializo con un largo de 10 elementos
+            //Declaro un array y lo inicializo con un largo de 10 elementos con un valor de 0 cada uno
             int[] numeros = new int[10];
             for (int i = 0; i < numeros.Length; i++)
             {
@@ -32,6 +32,10 @@ namespace _01_ValidadorDeRangos
                 Console.WriteLine($"El número en la posición {posicion} es {item}");
                 posicion++;
             }
+            //Usando la libreria LINQ, puedo acceder a métodos de instancia como Max,Min
+            //Linq nos provee de métodos para recorrer arrays y colecciones de manera sencilla y facil
+            //Documentación oficial sobre LINQ https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/concepts/linq/
+            //De esta manera podemos simplificar nuestro código sin armar el foreach y realizar la lógica de búsqueda del mayor o menor
             Console.WriteLine($"El número más grande es {numeros.Max()}");
             Console.WriteLine($"El número más chico es {numeros.Min()}");
             Console.WriteLine($"El promedio de los números ingresados es {numeros.Average()}");
