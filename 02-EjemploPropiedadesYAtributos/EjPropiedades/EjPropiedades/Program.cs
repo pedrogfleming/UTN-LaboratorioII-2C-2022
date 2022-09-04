@@ -12,7 +12,7 @@
             Auto a1 = new Auto() { peso = 45 };
             Console.WriteLine(a1.peso);
             a1.Peso = 2;
-            Console.WriteLine(a1.Peso); ;
+            Console.WriteLine(a1.Peso);
         }
     }
 }
