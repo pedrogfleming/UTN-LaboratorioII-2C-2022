@@ -19,7 +19,6 @@ namespace Veterinaria.Consola
             {
                 Nombre = PedirNombreCliente(),
                 Apellido = PedirApellidoCliente(),
-                Domicilio = PedirDomicilioCliente(),
                 Telefono = PedirTelefonoCliente()
             };
         }
@@ -48,11 +47,11 @@ namespace Veterinaria.Consola
         {
             string apellido = AnsiConsole.Ask<string>("Ingrese [green]Apellido[/] del cliente");
             //Validacion de que sean unicamente letras lo que ingreso el usuario
-            if (apellido.All(char.IsLetter))
+            while (!apellido.All(char.IsLetter))
             {
-                return apellido;
+                apellido = AnsiConsole.Ask<string>($"{apellido} no es un apellido valido. Ingrese nuevamente [green]Apellido[/] del cliente");
             }
-            return default;
+            return apellido;
         }
         /// <summary>
         /// Pedira por consola el telefono del cliente
@@ -62,50 +61,13 @@ namespace Veterinaria.Consola
         /// <returns>El telefono validado del cliente</returns>
         private static string PedirTelefonoCliente()
         {
-            string telefono = AnsiConsole.Ask<string>("Ingrese [green]Apellido[/] del cliente");
+            string telefono = AnsiConsole.Ask<string>("Ingrese [yellow]Telefono[/] del cliente");
             //Validacion de que sean unicamente letras lo que ingreso el usuario
             while(!telefono.All(char.IsDigit))
             {
-                return telefono;
+                telefono = AnsiConsole.Ask<string>($"{telefono} no es un telefono valido. Ingrese nuevamente [green]Apellido[/] del cliente");
             }
-            return default;
-        }
-        /// <summary>
-        /// Pedira por consola los datos del domicilio del cliente
-        /// Se validara que la ciudad,calle seam solo letras,
-        /// que la altura sean solo numeros,
-        /// y que el departamento sea numeros o letras
-        /// </summary>
-        /// <returns>La instancia de Domicilio con los datos validados</returns>
-        private static Domicilio PedirDomicilioCliente()
-        {
-            //Instancio un domicilio vacio que ire llenando con los datos validados que ira ingresando el usuario
-            Domicilio domicilio = new();
-            string input = AnsiConsole.Ask<string>("Ingrese [blue]ciudad[/]");
-            while (!input.All(char.IsLetter))
-            {
-                input = AnsiConsole.Ask<string>($"{input} no es una ciudad valida. Ingrese nuevamente [blue]ciudad[/]");
-            }
-            domicilio.Ciudad = input;
-            input = AnsiConsole.Ask<string>("Ingrese [blue]calle[/]");
-            while (!input.All(char.IsLetterOrDigit))
-            {
-                input = AnsiConsole.Ask<string>($"{input} no es una calle valida. Ingrese nuevamente [blue]calle[/]");
-            }
-            domicilio.Calle = input;
-            int altura = AnsiConsole.Ask<int>("Ingrese [blue]altura[/]");
-            while (altura <= 0)
-            {
-                input = AnsiConsole.Ask<string>($"{input} no es una altura valida. Ingrese nuevamente [blue]altura[/]");
-            }
-            domicilio.Altura = altura;
-            input = AnsiConsole.Ask<string>("Ingrese [blue]departamento[/]");
-            while (!input.All(char.IsLetterOrDigit))
-            {
-                input = AnsiConsole.Ask<string>($"{input} no es departamento valido. Ingrese nuevamente [blue]departamento[/]");
-            }
-            domicilio.Departamento = input;
-            return domicilio;
+            return telefono;
         }
     }
 }

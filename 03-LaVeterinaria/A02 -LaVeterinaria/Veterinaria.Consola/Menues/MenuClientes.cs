@@ -52,6 +52,7 @@ namespace Veterinaria.Consola.Menues
                 case 1:
                     //1 - Alta cliente
                     Cliente clienteIngresado = ConsolaCliente.PedirDatosCliente();
+                    clienteIngresado.Domicilio = ConsolaDomicilio.PedirDomicilio();
                     return ServicioCliente.Alta(clienteIngresado);
                 case 2:
                     //2 - Baja cliente

@@ -8,15 +8,41 @@
     ".NETCoreApp,Version=v6.0": {
       "A02 -LaVeterinaria/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Veterinaria.Consola": "1.0.0",
+          "Veterinaria.Domain": "1.0.0"
         },
         "runtime": {
           "A02 -LaVeterinaria.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "Spectre.Console/0.44.0": {
         "runtime": {
-          "Domain.dll": {}
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.44.0.0"
+          }
+        }
+      },
+      "Veterinaria.Consola/1.0.0": {
+        "dependencies": {
+          "Spectre.Console": "0.44.0",
+          "Veterinaria.Servicios": "1.0.0"
+        },
+        "runtime": {
+          "Veterinaria.Consola.dll": {}
+        }
+      },
+      "Veterinaria.Domain/1.0.0": {
+        "runtime": {
+          "Veterinaria.Domain.dll": {}
+        }
+      },
+      "Veterinaria.Servicios/1.0.0": {
+        "dependencies": {
+          "Veterinaria.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Veterinaria.Servicios.dll": {}
         }
       }
     }
@@ -27,7 +53,24 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Domain/1.0.0": {
+    "Spectre.Console/0.44.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QMpKtn5QV1j2nklqDwuRE/XwbDn5jxww+Mt5J6Jn3EeQIzaLcuLyUhCLh/mS8giN6uXbqOV1ep5HlUGxrV1ujQ==",
+      "path": "spectre.console/0.44.0",
+      "hashPath": "spectre.console.0.44.0.nupkg.sha512"
+    },
+    "Veterinaria.Consola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Veterinaria.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Veterinaria.Servicios/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

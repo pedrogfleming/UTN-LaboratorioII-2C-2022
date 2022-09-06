@@ -69,8 +69,8 @@ namespace Veterinaria.Consola
         /// <returns>Retorna true si es valido, si no retorna false</returns>
         public static bool IngresarComando()
         {
-            UltimaEntradaPorConsola = Console.ReadLine();
-            return string.IsNullOrEmpty(UltimaEntradaPorConsola) && !EsComandoValido(UltimaEntradaPorConsola);
+            ConsolaManager.UltimaEntradaPorConsola = Console.ReadLine();
+            return string.IsNullOrEmpty(UltimaEntradaPorConsola) || EsComandoValido(UltimaEntradaPorConsola);
         }
 
         /// <summary>

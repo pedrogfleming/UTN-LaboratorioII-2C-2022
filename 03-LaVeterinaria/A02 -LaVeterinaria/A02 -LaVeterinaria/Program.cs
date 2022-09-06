@@ -13,7 +13,6 @@ namespace A02__LaVeterinaria
             do
             {
                 bool resultado = false;
-                ConsolaManager.IngresarComando();
                 switch (ConsolaManager.MenuActual)
                 {
                     case EMenu.Principal:

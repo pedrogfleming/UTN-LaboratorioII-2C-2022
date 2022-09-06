@@ -42,8 +42,6 @@ namespace Veterinaria.Consola.Menues
                 return infoMenu;
             }
         }
-        public static string UltimaEntradaPorConsola { get; set; }
-
         /// <summary>
         /// Realiza la accion solicitada por el usuario en el menu
         /// </summary>
@@ -51,7 +49,7 @@ namespace Veterinaria.Consola.Menues
         {
             //Asigno por default un nro negativo para agregar una validacion más de comando invalido
             int comando = -1;
-            int.TryParse(UltimaEntradaPorConsola, out comando);
+            int.TryParse(ConsolaManager.UltimaEntradaPorConsola, out comando);
             switch (comando)
             {
                 case 0:

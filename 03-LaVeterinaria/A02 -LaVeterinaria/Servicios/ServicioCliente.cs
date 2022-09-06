@@ -34,7 +34,7 @@ namespace Veterinaria.Servicios
         public static bool Alta(Cliente c)
         {
             Cliente cliente = _clientes.Find(cliente => cliente == c);
-            if (cliente is null) { return false; }
+            if (cliente is not null) { return false; }
             _clientes.Add(c);
             return true;
         }
