@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OqJYi87f4XAYgQRnfb6zWA/eIzUKmrIhiZpbx76W+HcYq09TKQW0DkSDIdAfiSO0DY43HrMTGA5K+M626CjBBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\03-LaVeterinaria\\A02 -LaVeterinaria\\Veterinaria.Consola\\Veterinaria.Consola.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pedro.fleming\\.nuget\\packages\\spectre.console\\0.44.0\\spectre.console.0.44.0.nupkg.sha512"
+  ],
+  "logs": []
+}

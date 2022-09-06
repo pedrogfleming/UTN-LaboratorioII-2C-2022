@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Domain\Veterinaria.Domain.csproj" />
+    <ProjectReference Include="..\Veterinaria.Consola\Veterinaria.Consola.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,7 @@
 ﻿using System.Text;
+using Veterinaria.Consola.Menues.Enums;
 
-namespace Domain
+namespace Veterinaria.Consola.Menues
 {
     /// <summary>
     /// Definimos una clase estatica para manejar la interaccion del usuario con la aplicacion
@@ -34,7 +35,7 @@ namespace Domain
         /// <summary>
         /// Retorna la informacion del menu clientes en un string
         /// </summary>
-        public static string InfoMenu 
+        public static string InfoMenu
         {
             get
             {
@@ -42,10 +43,11 @@ namespace Domain
             }
         }
         public static string UltimaEntradaPorConsola { get; set; }
+
         /// <summary>
         /// Realiza la accion solicitada por el usuario en el menu
         /// </summary>
-        private static void SwitchComando()
+        public static bool SwitchComando()
         {
             //Asigno por default un nro negativo para agregar una validacion más de comando invalido
             int comando = -1;
@@ -53,29 +55,28 @@ namespace Domain
             switch (comando)
             {
                 case 0:
-                    //0 - Volver al menur anterior
-                    ConsolaManager.MenuActual = EMenu.;
-                    break;
+                    //0 - Salir de la aplicacion
+                    ConsolaManager.Seguir = false;
+                    return true;
                 case 1:
-                    //1 - Menu clientes                    
-                    Console.WriteLine("\nMenu clientes\n");
-                    ConsolaManager.MostrarPorConsola(MenuClientes.InfoMenu);
-                    MenuPrincipal.IngresarComando();
-
-                    break;
+                    //1 - Menu clientes
+                    ConsolaManager.MenuActual = EMenu.Clientes;
+                    return true;
                 case 2:
-                    //2 - Menu mascotas                    
-                    Console.WriteLine("Menu mascotas");
-                    break;
+                    //2 - Menu mascotas
+                    ConsolaManager.MenuActual = EMenu.Mascotas;
+                    return true;
                 case 3:
                     //3 - Ver clientes y mascotas
                     Console.WriteLine("Mostrar clientes y mascotas");
-                    break;
+                    return true;
                 default:
                     //Comando invalido
-                    Console.WriteLine("Comando invalido\n");
-                    break;
+                    Console.WriteLine($"{ConsolaManager.UltimaEntradaPorConsola} no es un comando valido\n");
+                    return false;
             }
         }
+
+
     }
 }

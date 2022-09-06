@@ -1,4 +1,7 @@
-﻿namespace Domain
+﻿using Veterinaria.Consola.Menues;
+using Veterinaria.Consola.Menues.Enums;
+
+namespace Veterinaria.Consola
 {
     public static class ConsolaManager
     {
@@ -7,6 +10,11 @@
         /// declarada como nulleable dado que al arrancar el programa todavía no ingresó un comando el usuario
         /// </summary>
         private static string? ultimaEntradaPorConsola;
+
+        static ConsolaManager()
+        {
+            MenuActual = EMenu.Principal;
+        }
         public static string UltimaEntradaPorConsola { get; set; }
         public static EMenu MenuActual { get; set; }
 
@@ -55,17 +63,14 @@
             // Mas info aca: https://docs.microsoft.com/es-es/dotnet/csharp/fundamentals/functional/discards
             return int.TryParse(input.ToString(), out _);
         }
-        public static void IngresarComando()
+        /// <summary>
+        /// Se le pedira al usuario que ingrese un input
+        /// </summary>
+        /// <returns>Retorna true si es valido, si no retorna false</returns>
+        public static bool IngresarComando()
         {
             UltimaEntradaPorConsola = Console.ReadLine();
-            if (!string.IsNullOrEmpty(UltimaEntradaPorConsola) && ConsolaManager.EsComandoValido(UltimaEntradaPorConsola))
-            {
-                SwitchComando();
-            }
-            else
-            {
-                Console.WriteLine("Comando invalido\n");
-            }
+            return string.IsNullOrEmpty(UltimaEntradaPorConsola) && !EsComandoValido(UltimaEntradaPorConsola);
         }
 
         /// <summary>
@@ -79,18 +84,13 @@
             switch (comando)
             {
                 case 0:
-                    //0 - Volver al menur anterior
-                    ConsolaManager.Seguir = false;
+                    //0 - Volver al menu anterior
+                    ConsolaManager.MenuActual = EMenu.Principal;
                     break;
                 case 1:
                     //1 - Menu clientes
                     ConsolaManager.MenuActual = EMenu.Clientes;
                     Console.WriteLine($"\n{MenuActual}\n");
-                    ConsolaManager.OpcionesMenuActual = MenuClientes.InfoMenu;
-                    ConsolaManager.MostrarPorConsola(MenuClientes.InfoMenu);
-
-                    ConsolaManager.IngresarComando();
-
                     break;
                 case 2:
                     //2 - Menu mascotas
@@ -104,8 +104,9 @@
                 default:
                     //Comando invalido
                     Console.WriteLine("Comando invalido\n");
-                    break;
+                    return;
             }
+            Console.WriteLine($"\n{MenuActual}\n");
         }
     }
 }

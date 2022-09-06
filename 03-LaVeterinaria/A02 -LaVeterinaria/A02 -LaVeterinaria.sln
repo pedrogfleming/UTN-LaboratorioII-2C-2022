@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A02 -LaVeterinaria", "A02 -LaVeterinaria\A02 -LaVeterinaria.csproj", "{41A08843-A41C-4360-8866-1E65A458873E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A02 -LaVeterinaria", "A02 -LaVeterinaria\A02 -LaVeterinaria.csproj", "{41A08843-A41C-4360-8866-1E65A458873E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{98DFEC58-BDFD-4420-8567-47FD44A4EA80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veterinaria.Domain", "Domain\Veterinaria.Domain.csproj", "{98DFEC58-BDFD-4420-8567-47FD44A4EA80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinaria.Consola", "Veterinaria.Consola\Veterinaria.Consola.csproj", "{082DAA8B-2D99-4874-A722-F6F09C88880A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinaria.Servicios", "Servicios\Veterinaria.Servicios.csproj", "{3211EADD-6D38-42D5-A1B6-05C54114FE8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{98DFEC58-BDFD-4420-8567-47FD44A4EA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DFEC58-BDFD-4420-8567-47FD44A4EA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DFEC58-BDFD-4420-8567-47FD44A4EA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082DAA8B-2D99-4874-A722-F6F09C88880A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082DAA8B-2D99-4874-A722-F6F09C88880A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082DAA8B-2D99-4874-A722-F6F09C88880A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082DAA8B-2D99-4874-A722-F6F09C88880A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3211EADD-6D38-42D5-A1B6-05C54114FE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3211EADD-6D38-42D5-A1B6-05C54114FE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3211EADD-6D38-42D5-A1B6-05C54114FE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3211EADD-6D38-42D5-A1B6-05C54114FE8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

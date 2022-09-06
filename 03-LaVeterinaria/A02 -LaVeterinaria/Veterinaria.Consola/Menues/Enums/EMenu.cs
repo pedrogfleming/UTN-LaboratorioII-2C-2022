@@ -1,4 +1,4 @@
-﻿namespace Domain
+﻿namespace Veterinaria.Consola.Menues.Enums
 {
     public enum EMenu
     {

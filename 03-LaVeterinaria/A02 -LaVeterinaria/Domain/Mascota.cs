@@ -9,6 +9,7 @@
 
         public Vacuna[] historialDeVacunacion;
 
+        public Guid IdDueño{ get; set; }
         public Mascota(Guid id, string especie, string nombre, DateTime fechaNacimiento, Vacuna[] historialDeVacunacion)
         {
             Id = id;
