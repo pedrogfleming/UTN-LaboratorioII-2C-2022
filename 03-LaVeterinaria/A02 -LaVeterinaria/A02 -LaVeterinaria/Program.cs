@@ -16,7 +16,6 @@ namespace A02__LaVeterinaria
                 ConsolaManager.IngresarComando();
                 switch (ConsolaManager.MenuActual)
                 {
-                    
                     case EMenu.Principal:
                         ConsolaManager.MostrarPorConsola(MenuPrincipal.InfoMenu);
                         if (!ConsolaManager.IngresarComando()) { ConsolaManager.MostrarPorConsola($"{ConsolaManager.UltimaEntradaPorConsola} no es un comando valido\n"); }
