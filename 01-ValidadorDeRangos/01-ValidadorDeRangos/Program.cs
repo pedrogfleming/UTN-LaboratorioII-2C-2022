@@ -10,7 +10,7 @@ namespace _01_ValidadorDeRangos
         {
             int totalNumeros = 0;
             //Declaro un array y lo inicializo con un largo de 10 elementos con un valor de 0 cada uno
-            int[] numeros = new int[10];
+            int[] numeros = new int[10];            
             for (int i = 0; i < numeros.Length; i++)
             {
                 Console.WriteLine("Ingrese un  número");
