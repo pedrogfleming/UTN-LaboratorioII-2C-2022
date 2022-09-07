@@ -38,10 +38,10 @@ namespace Entidades
             string ganador;
             //Primero sumo el total de kms/semana de cada conductor y lo guardo en un iterable que tiene el nombre y total kms de cada conductor
             //Dentro de un metodo de linq, yo puedo instanciar objetos anonimos, mas info en https://docs.microsoft.com/es-es/dotnet/csharp/fundamentals/types/anonymous-types
-            var sumaTotal = arrayConductores.Select<Camionero,(float TotalKms, string NombreConductor)>(c => new(
+            var sumaTotal = arrayConductores.Select<Camionero, (float TotalKms, string NombreConductor)>(c => new(
                 c.ArrayDiasKm.Sum(),
                 c.Nombre)
-            );            
+            );
             //Despues obtengo el conductor que mas kilometros hizo y me quedo con su total kilometros y su nombre
             var camioneroYsuKms = sumaTotal.Where(camionero => camionero.TotalKms == sumaTotal.Max(sumatot => sumatot.TotalKms));
             //Finalmente, me quedo solo con el nombre del conductor que hizo mas kms
@@ -50,9 +50,9 @@ namespace Entidades
             //string ganador;
             //float buffer;//porque tengo que darle un valor
             //int indiceConductorConMasKm = -1;//por que tengo qe darle un valor
-
+            //for (int j = 0; j < arrayConductores.Length; j++)
+            //{
             //    buffer = arrayConductores[j].ArrayDiasKm.Sum();//suma de km de un conductor
-
             //    if (j == 0)
             //    {
             //        indiceConductorConMasKm = j;
@@ -66,8 +66,9 @@ namespace Entidades
             //    }
             //}
             //ganador = RetornoConductorByIndice(indiceConductorConMasKm);//llamo a funcion que devuelve ganador
-            #endregion
-            return ganador;
+            //}
+                #endregion
+                return ganador;
         }
         /// <summary>
         /// Retorna string ganador a travez del indice que recibe por parametro
