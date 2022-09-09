@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form-ContarPalabras", "Form-ContarPalabras\Form-ContarPalabras.csproj", "{AB6F328E-58D3-4F9B-B4DE-06CDCF7ABC1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB6F328E-58D3-4F9B-B4DE-06CDCF7ABC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB6F328E-58D3-4F9B-B4DE-06CDCF7ABC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB6F328E-58D3-4F9B-B4DE-06CDCF7ABC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB6F328E-58D3-4F9B-B4DE-06CDCF7ABC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {266C76BD-2991-403D-9D3D-DF9C5CF23A08}
+	EndGlobalSection
+EndGlobal
