@@ -23,7 +23,7 @@ namespace _07_ComunicacionEntreForms
             Sb = sb;
         }
 
-        public StringBuilder Sb { get; set; }
+        private StringBuilder Sb { get; set; }
 
         private void button1_Click(object sender, EventArgs e)
         {
