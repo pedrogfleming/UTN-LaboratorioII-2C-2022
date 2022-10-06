@@ -1,0 +1,16 @@
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\bin\Debug\net5.0\08-CopiaPorValor-Listas.exe
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\bin\Debug\net5.0\08-CopiaPorValor-Listas.deps.json
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\bin\Debug\net5.0\08-CopiaPorValor-Listas.runtimeconfig.json
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\bin\Debug\net5.0\08-CopiaPorValor-Listas.runtimeconfig.dev.json
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\bin\Debug\net5.0\08-CopiaPorValor-Listas.dll
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\bin\Debug\net5.0\08-CopiaPorValor-Listas.pdb
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.csproj.AssemblyReference.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.AssemblyInfoInputs.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.AssemblyInfo.cs
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.csproj.CoreCompileInputs.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.dll
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\refint\08-CopiaPorValor-Listas.dll
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.pdb
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\08-CopiaPorValor-Listas.genruntimeconfig.cache
+C:\Users\pedro.fleming\source\repos\UTN-LaboratorioII-2C\08-CopiaPorValor-Listas\08-CopiaPorValor-Listas\obj\Debug\net5.0\ref\08-CopiaPorValor-Listas.dll
