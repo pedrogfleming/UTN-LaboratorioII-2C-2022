@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "EnviarMensajeForm/1.0.0": {
+        "dependencies": {
+          "Vista": "1.0.0"
+        },
+        "runtime": {
+          "EnviarMensajeForm.dll": {}
+        }
+      },
+      "Vista/1.0.0": {
+        "runtime": {
+          "Vista.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EnviarMensajeForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Vista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

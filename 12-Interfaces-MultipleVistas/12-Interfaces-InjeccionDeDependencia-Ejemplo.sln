@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviarMensajeForm", "12-Interfaces-MultipleVistas\EnviarMensajeForm.csproj", "{83F9F1BC-0BA0-4EAF-8376-C3A5D3AFFE38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "View\Vista.csproj", "{F66F0514-0BF7-41D0-98D6-498CE0AE4458}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83F9F1BC-0BA0-4EAF-8376-C3A5D3AFFE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F9F1BC-0BA0-4EAF-8376-C3A5D3AFFE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F9F1BC-0BA0-4EAF-8376-C3A5D3AFFE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F9F1BC-0BA0-4EAF-8376-C3A5D3AFFE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C53D7DB0-BAFE-4C99-A15C-C7DE012B5D52}
+	EndGlobalSection
+EndGlobal
