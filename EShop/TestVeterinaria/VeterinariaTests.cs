@@ -20,7 +20,7 @@ namespace TestVeterinaria
             Assert.IsTrue(mascotas.Count > 0);
         }
         [TestMethod]
-        public void Test_AgregarMascota_Ok()
+        public void Test_AgregarMascota_AlaEspera_Ok()
         {
             //Arrange: 
             Mascota m = new("Panchito", 12, Guid.NewGuid());
@@ -30,9 +30,9 @@ namespace TestVeterinaria
             Assert.IsTrue(resultado);
         }
         [TestMethod]
-        public void Test_AgregarMascota_Ya_Existe()
+        public void Test_AgregarMascota_ALa_Espera_Ya_Existe()
         {
-            //Arrange: 
+            //Arrange:
             Mascota m = VeterinariaManager.Pets.Keys.FirstOrDefault();
             //Act:
             bool resultado = VeterinariaManager.AgregarMascotaALaCola(m);
@@ -40,6 +40,8 @@ namespace TestVeterinaria
             //Debería retornar false y no agregarla dado que ya existe
             Assert.IsFalse(resultado);
         }
+
+
         [TestMethod]
         public void Test_AtenderMascota_Ok()
         {
@@ -61,7 +63,7 @@ namespace TestVeterinaria
             Assert.IsFalse(resultado);
         }
         [TestMethod]
-        [ExpectedException(typeof(MascotaInexistenteException))]
+        [ExpectedException(typeof(Exception))]
         public void Test_AtenderMascota_Inexistente_Exception()
         {
             //Arrange: 
@@ -87,9 +89,9 @@ namespace TestVeterinaria
             Mascota m1 = new("Lalo", 2, Guid.NewGuid());
             Mascota m2 = new("Panchito", 3, Guid.NewGuid());
             //Act:
-            bool resultado = m1 != m2;
+            bool resultado = m1 == m2;
             //Assert:
-            Assert.IsTrue(resultado);
+            Assert.IsFalse(resultado);
         }
     }
 }

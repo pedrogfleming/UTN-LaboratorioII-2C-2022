@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop", "EShop\EShop.csproj", "{A80C2F04-3DDC-4941-9D3A-79A68C8B8095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop", "EShop\EShop.csproj", "{A80C2F04-3DDC-4941-9D3A-79A68C8B8095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVeterinaria", "TestVeterinaria\TestVeterinaria.csproj", "{40954A22-1346-4192-8855-FA3D629B18FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestVeterinaria", "TestVeterinaria\TestVeterinaria.csproj", "{40954A22-1346-4192-8855-FA3D629B18FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{5B7D35DD-120F-45EB-90D1-E3E319DEA26E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{40954A22-1346-4192-8855-FA3D629B18FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40954A22-1346-4192-8855-FA3D629B18FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40954A22-1346-4192-8855-FA3D629B18FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B7D35DD-120F-45EB-90D1-E3E319DEA26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7D35DD-120F-45EB-90D1-E3E319DEA26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7D35DD-120F-45EB-90D1-E3E319DEA26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7D35DD-120F-45EB-90D1-E3E319DEA26E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

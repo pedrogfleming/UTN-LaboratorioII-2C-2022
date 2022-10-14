@@ -16,30 +16,36 @@ namespace Veterinaria
         static VeterinariaManager()
         {
             Pets = new Dictionary<Mascota,bool>();
-            Pets.Add(new Mascota("Raichu",2, Guid.NewGuid()),false);
-            Pets.Add(new Mascota("Copito", 5, Guid.NewGuid()),false);
+            Pets.Add(new Mascota("Raichu", 2, Guid.NewGuid()), false);
+            Pets.Add(new Mascota("Copito", 5, Guid.NewGuid()), false);
             Pets.Add(new Mascota("Michi", 12, Guid.NewGuid()), true);
         }
         public static bool AtenderMascota(Mascota m)
         {
             try
             {
-                //Chequeo si la mascota ya fue atendida
-                if (!Pets.ContainsKey(m)) { throw new MascotaInexistenteException("La mascota no está registrada"); }
+                //Chequeo si la mascota existe en la cola
+                if (!Pets.ContainsKey(m)) 
+                {
+                    throw new MascotaInexistenteException("La mascota no está registrada"); 
+                }
+                //Si la mascota ya esta atendida, retorno false
                 if (Pets[m])
                 {
                     return false;
                 }
+                //Si no esta atendida, la marco como atendida
                 Pets[m] = true;
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception(ex.Message,ex);
             }
         }
         public static bool AgregarMascotaALaCola(Mascota m)
         {
+            //Si la mascota no esta en la cola, la agrego
             if (!Pets.ContainsKey(m))
             {
                 Pets.Add(m, false);
@@ -47,6 +53,7 @@ namespace Veterinaria
             }
             else
             {
+                //Si la mascota ya esta en la cola, entonces no la agrego y retorno false
                 return false;
             }
         }
