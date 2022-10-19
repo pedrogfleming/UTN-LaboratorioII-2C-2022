@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "JZWY8LedQXJVPt++UwWljzpjhGlBhsxWZEZJddvWB5S5CWZrt45g0BUw6KZDEVIHbNPS56jIFTDwfjaqZRrRjw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\14-SearchEngine\\14-SearchEngine\\14-SearchEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pedro.fleming\\.nuget\\packages\\lucene.net\\3.0.3\\lucene.net.3.0.3.nupkg.sha512",
+    "C:\\Users\\pedro.fleming\\.nuget\\packages\\sharpziplib\\0.86.0\\sharpziplib.0.86.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lucene.Net 3.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Lucene.Net",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SharpZipLib 0.86.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SharpZipLib",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
