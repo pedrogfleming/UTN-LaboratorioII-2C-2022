@@ -2,13 +2,14 @@
 using System.Diagnostics;
 using Vista;
 
-namespace View
+namespace Notificaciones
 {
     /// <summary>
     /// Muestra por consola un mensaje al usuario
     /// </summary>
     public class MostrarConsola : IMostrarMensaje
     {
+
         /// <summary>
         /// Muestre un mensaje por la consola del IDE
         /// </summary>

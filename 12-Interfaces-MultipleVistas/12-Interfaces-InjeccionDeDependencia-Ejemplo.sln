@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vista", "12-Interfaces-Mult
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notificaciones", "View\Notificaciones.csproj", "{F66F0514-0BF7-41D0-98D6-498CE0AE4458}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Borrador", "ejemploInterfaz\Borrador.csproj", "{2ABA46F9-DCE5-44A4-AEFE-8F569829A181}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F66F0514-0BF7-41D0-98D6-498CE0AE4458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABA46F9-DCE5-44A4-AEFE-8F569829A181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABA46F9-DCE5-44A4-AEFE-8F569829A181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABA46F9-DCE5-44A4-AEFE-8F569829A181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABA46F9-DCE5-44A4-AEFE-8F569829A181}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

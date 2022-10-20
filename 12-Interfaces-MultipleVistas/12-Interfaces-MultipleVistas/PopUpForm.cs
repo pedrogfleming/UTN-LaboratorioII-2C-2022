@@ -8,9 +8,14 @@ namespace VistaFormulario
     /// </summary>
     public class PopUpForm : IMostrarMensaje
     {
+        int contador = 0;
         public void Mostrar(string mensaje)
         {
             MessageBox.Show(mensaje);
+        }
+        public void contarMensajes(int entero)
+        {
+            contador += entero;
         }
     }
 }
