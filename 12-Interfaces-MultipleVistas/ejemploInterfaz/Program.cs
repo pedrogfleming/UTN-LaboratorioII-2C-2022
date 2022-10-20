@@ -9,6 +9,7 @@ namespace ejemploInterfaz
     {
         static void Main(string[] args)
         {
+
             List<int> numeros = new();
             numeros.Add(1);
             numeros.Add(2);
