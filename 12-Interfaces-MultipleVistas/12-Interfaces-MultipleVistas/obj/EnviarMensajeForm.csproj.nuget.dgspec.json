@@ -33,8 +33,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Vista.csproj": {
-                "projectPath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Vista.csproj"
+              "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Notificaciones.csproj": {
+                "projectPath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Notificaciones.csproj"
               }
             }
           }
@@ -71,12 +71,12 @@
         }
       }
     },
-    "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Vista.csproj": {
+    "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Notificaciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Vista.csproj",
-        "projectName": "Vista",
-        "projectPath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Vista.csproj",
+        "projectUniqueName": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Notificaciones.csproj",
+        "projectName": "Notificaciones",
+        "projectPath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\Notificaciones.csproj",
         "packagesPath": "C:\\Users\\pedro.fleming\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pedro.fleming\\source\\repos\\UTN-LaboratorioII-2C\\12-Interfaces-MultipleVistas\\View\\obj\\",
         "projectStyle": "PackageReference",

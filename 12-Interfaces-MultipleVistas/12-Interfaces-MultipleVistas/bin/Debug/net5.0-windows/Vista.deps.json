@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Vista/1.0.0": {
+        "dependencies": {
+          "Notificaciones": "1.0.0"
+        },
+        "runtime": {
+          "Vista.dll": {}
+        }
+      },
+      "Notificaciones/1.0.0": {
+        "runtime": {
+          "Notificaciones.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notificaciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

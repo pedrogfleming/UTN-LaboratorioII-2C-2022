@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Common.Logging/2.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Common.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Lucene.Net/3.0.3": {
         "type": "package",
         "dependencies": {
@@ -18,6 +31,107 @@
           }
         }
       },
+      "Lucene.Net.Contrib/3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net": "3.0.3"
+        },
+        "compile": {
+          "lib/net40/Lucene.Net.Contrib.Analyzers.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.FastVectorHighlighter.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net40/Lucene.Net.Contrib.Highlighter.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Memory.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Queries.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Regex.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net40/Lucene.Net.Contrib.SimpleFacetedSearch.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net40/Lucene.Net.Contrib.Snowball.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.SpellChecker.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net40/Lucene.Net.Contrib.Analyzers.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.FastVectorHighlighter.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net40/Lucene.Net.Contrib.Highlighter.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Memory.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Queries.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.Regex.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net40/Lucene.Net.Contrib.SimpleFacetedSearch.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net40/Lucene.Net.Contrib.Snowball.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net40/Lucene.Net.Contrib.SpellChecker.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "Lucene.Net.Linq/3.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging": "[2.3.1, 3.0.0)",
+          "Lucene.Net": "[3.0.3, 3.6.0)",
+          "Remotion.Linq": "[1.13.183, 1.15.10)"
+        },
+        "compile": {
+          "lib/net40/Lucene.Net.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Lucene.Net.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Remotion.Linq/1.13.183": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Remotion.Linq.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/Remotion.Linq.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpZipLib/0.86.0": {
         "type": "package",
         "compile": {
@@ -30,6 +144,23 @@
     }
   },
   "libraries": {
+    "Common.Logging/2.3.1": {
+      "sha512": "Gg6n32fpNIEB5UO7zuxfMEai4iFVqxttCqTqWlgm03Tbt/HfzKkxL1E4MDm2KLPd31rQoB5/vl3MZX3ETWxyZg==",
+      "type": "package",
+      "path": "common.logging/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common.logging.2.3.1.nupkg.sha512",
+        "common.logging.nuspec",
+        "lib/net35/Common.Logging.dll",
+        "lib/net35/Common.Logging.pdb",
+        "lib/net35/Common.Logging.xml",
+        "lib/net40/Common.Logging.dll",
+        "lib/net40/Common.Logging.pdb",
+        "lib/net40/Common.Logging.xml"
+      ]
+    },
     "Lucene.Net/3.0.3": {
       "sha512": "A/70q4eDcuuafQeDB9eaiDP9FQG7X29T4VIYRphS7Wk8kAM9gNcfVqYyd0H8BJ1BTpA5C1ORm9RzFn4BiNavrw==",
       "type": "package",
@@ -45,6 +176,104 @@
         "lib/NET40/Lucene.Net.pdb",
         "lucene.net.3.0.3.nupkg.sha512",
         "lucene.net.nuspec"
+      ]
+    },
+    "Lucene.Net.Contrib/3.0.3": {
+      "sha512": "4aFMsm5657tIIAXWOh3wYxSfPwWFDjrUomXnE3lxKPOuJDjmvLg3CEuTaPYuLvBMKwRaj/C4EwyPM5/pmIwytw==",
+      "type": "package",
+      "path": "lucene.net.contrib/3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Lucene.Net.Contrib.Analyzers.XML",
+        "lib/net35/Lucene.Net.Contrib.Analyzers.dll",
+        "lib/net35/Lucene.Net.Contrib.Analyzers.pdb",
+        "lib/net35/Lucene.Net.Contrib.Core.XML",
+        "lib/net35/Lucene.Net.Contrib.Core.dll",
+        "lib/net35/Lucene.Net.Contrib.Core.pdb",
+        "lib/net35/Lucene.Net.Contrib.FastVectorHighlighter.dll",
+        "lib/net35/Lucene.Net.Contrib.FastVectorHighlighter.pdb",
+        "lib/net35/Lucene.Net.Contrib.FastVectorHighlighter.xml",
+        "lib/net35/Lucene.Net.Contrib.Highlighter.XML",
+        "lib/net35/Lucene.Net.Contrib.Highlighter.dll",
+        "lib/net35/Lucene.Net.Contrib.Highlighter.pdb",
+        "lib/net35/Lucene.Net.Contrib.Memory.XML",
+        "lib/net35/Lucene.Net.Contrib.Memory.dll",
+        "lib/net35/Lucene.Net.Contrib.Memory.pdb",
+        "lib/net35/Lucene.Net.Contrib.Queries.XML",
+        "lib/net35/Lucene.Net.Contrib.Queries.dll",
+        "lib/net35/Lucene.Net.Contrib.Queries.pdb",
+        "lib/net35/Lucene.Net.Contrib.Regex.dll",
+        "lib/net35/Lucene.Net.Contrib.Regex.pdb",
+        "lib/net35/Lucene.Net.Contrib.Regex.xml",
+        "lib/net35/Lucene.Net.Contrib.SimpleFacetedSearch.dll",
+        "lib/net35/Lucene.Net.Contrib.SimpleFacetedSearch.pdb",
+        "lib/net35/Lucene.Net.Contrib.SimpleFacetedSearch.xml",
+        "lib/net35/Lucene.Net.Contrib.Snowball.XML",
+        "lib/net35/Lucene.Net.Contrib.Snowball.dll",
+        "lib/net35/Lucene.Net.Contrib.Snowball.pdb",
+        "lib/net35/Lucene.Net.Contrib.SpellChecker.XML",
+        "lib/net35/Lucene.Net.Contrib.SpellChecker.dll",
+        "lib/net35/Lucene.Net.Contrib.SpellChecker.pdb",
+        "lib/net40/Lucene.Net.Contrib.Analyzers.XML",
+        "lib/net40/Lucene.Net.Contrib.Analyzers.dll",
+        "lib/net40/Lucene.Net.Contrib.Analyzers.pdb",
+        "lib/net40/Lucene.Net.Contrib.Core.XML",
+        "lib/net40/Lucene.Net.Contrib.Core.dll",
+        "lib/net40/Lucene.Net.Contrib.Core.pdb",
+        "lib/net40/Lucene.Net.Contrib.FastVectorHighlighter.dll",
+        "lib/net40/Lucene.Net.Contrib.FastVectorHighlighter.pdb",
+        "lib/net40/Lucene.Net.Contrib.FastVectorHighlighter.xml",
+        "lib/net40/Lucene.Net.Contrib.Highlighter.XML",
+        "lib/net40/Lucene.Net.Contrib.Highlighter.dll",
+        "lib/net40/Lucene.Net.Contrib.Highlighter.pdb",
+        "lib/net40/Lucene.Net.Contrib.Memory.XML",
+        "lib/net40/Lucene.Net.Contrib.Memory.dll",
+        "lib/net40/Lucene.Net.Contrib.Memory.pdb",
+        "lib/net40/Lucene.Net.Contrib.Queries.XML",
+        "lib/net40/Lucene.Net.Contrib.Queries.dll",
+        "lib/net40/Lucene.Net.Contrib.Queries.pdb",
+        "lib/net40/Lucene.Net.Contrib.Regex.dll",
+        "lib/net40/Lucene.Net.Contrib.Regex.pdb",
+        "lib/net40/Lucene.Net.Contrib.Regex.xml",
+        "lib/net40/Lucene.Net.Contrib.SimpleFacetedSearch.dll",
+        "lib/net40/Lucene.Net.Contrib.SimpleFacetedSearch.pdb",
+        "lib/net40/Lucene.Net.Contrib.SimpleFacetedSearch.xml",
+        "lib/net40/Lucene.Net.Contrib.Snowball.XML",
+        "lib/net40/Lucene.Net.Contrib.Snowball.dll",
+        "lib/net40/Lucene.Net.Contrib.Snowball.pdb",
+        "lib/net40/Lucene.Net.Contrib.SpellChecker.XML",
+        "lib/net40/Lucene.Net.Contrib.SpellChecker.dll",
+        "lib/net40/Lucene.Net.Contrib.SpellChecker.pdb",
+        "lucene.net.contrib.3.0.3.nupkg.sha512",
+        "lucene.net.contrib.nuspec"
+      ]
+    },
+    "Lucene.Net.Linq/3.6.0": {
+      "sha512": "2CDZetODbHY/IiNWz3W2YmO6Ns3QIosr/ZiNRUjH9qf3j2OYcxKJBSwMrvvuL8gVRS7AsKDS7qAQ2hkIlg0ciQ==",
+      "type": "package",
+      "path": "lucene.net.linq/3.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Lucene.Net.Linq.dll",
+        "lib/net40/Lucene.Net.Linq.xml",
+        "lucene.net.linq.3.6.0.nupkg.sha512",
+        "lucene.net.linq.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Remotion.Linq/1.13.183": {
+      "sha512": "8/dllOYDhJKYkX1oDC4FxJ4BTz76SYrNPoLAN6+zFARZUNdcwoxF3tHr6eVvm6p5E3CUHS8IlvjGxYpsTgDsjw==",
+      "type": "package",
+      "path": "remotion.linq/1.13.183",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Remotion.Linq.dll",
+        "lib/net35/Remotion.Linq.xml",
+        "remotion.linq.1.13.183.nupkg.sha512",
+        "remotion.linq.nuspec"
       ]
     },
     "SharpZipLib/0.86.0": {
@@ -65,7 +294,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Lucene.Net >= 3.0.3"
+      "Lucene.Net >= 3.0.3",
+      "Lucene.Net.Contrib >= 3.0.3",
+      "Lucene.Net.Linq >= 3.6.0"
     ]
   },
   "packageFolders": {
@@ -116,6 +347,14 @@
           "Lucene.Net": {
             "target": "Package",
             "version": "[3.0.3, )"
+          },
+          "Lucene.Net.Contrib": {
+            "target": "Package",
+            "version": "[3.0.3, )"
+          },
+          "Lucene.Net.Linq": {
+            "target": "Package",
+            "version": "[3.6.0, )"
           }
         },
         "imports": [
@@ -143,8 +382,48 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "Package 'Common.Logging 2.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Common.Logging",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "Package 'Lucene.Net 3.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Lucene.Net",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lucene.Net.Contrib 3.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Lucene.Net.Contrib",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lucene.Net.Linq 3.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Lucene.Net.Linq",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Remotion.Linq 1.13.183' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Remotion.Linq",
       "targetGraphs": [
         "net6.0"
       ]

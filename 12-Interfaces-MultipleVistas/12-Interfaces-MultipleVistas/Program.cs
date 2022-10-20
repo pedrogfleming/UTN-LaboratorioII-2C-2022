@@ -10,6 +10,7 @@ namespace VistaFormulario
 {
     internal static class Program
     {
+        //Declaramos una variable donde vamos a guardar la dependencia
         private static IMostrarMensaje _mostrarMensaje;
         /// <summary>
         ///  The main entry point for the application.
@@ -17,6 +18,7 @@ namespace VistaFormulario
         [STAThread]
         static void Main()
         {
+            //Guardamos en la interfaz la instancia de la dependencia
             #region Usando la consola
             _mostrarMensaje = new MostrarConsola();
             #endregion
@@ -26,6 +28,7 @@ namespace VistaFormulario
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //La injeccion la hacemos por constructor
             Application.Run(new formPrincipal(_mostrarMensaje));
         }
     }

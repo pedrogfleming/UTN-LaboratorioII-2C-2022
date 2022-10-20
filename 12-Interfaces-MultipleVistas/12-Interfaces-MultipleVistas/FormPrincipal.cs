@@ -13,9 +13,17 @@ namespace VistaFormulario
 {
     public partial class formPrincipal : Form
     {
+        /// <summary>
+        /// En este atributo vamos a guardar la dependencia a utilizar
+        /// </summary>
         private readonly IMostrarMensaje _mostrarMensaje;
+        /// <summary>
+        /// Recibe una instancia de una clase que implemente IMostrarMensaje
+        /// </summary>
+        /// <param name="mostrarMensaje"></param>
         public formPrincipal(IMostrarMensaje mostrarMensaje)
         {
+            //Guardamos la dependencia en el atributo del form
             _mostrarMensaje = mostrarMensaje;
             InitializeComponent();
         }

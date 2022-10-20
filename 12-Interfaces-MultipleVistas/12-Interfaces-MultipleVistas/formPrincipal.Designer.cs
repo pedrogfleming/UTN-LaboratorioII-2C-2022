@@ -49,15 +49,15 @@
             this.txtMensaje.Size = new System.Drawing.Size(448, 31);
             this.txtMensaje.TabIndex = 1;
             // 
-            // Form1
+            // formPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 172);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.btnEnviar);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "formPrincipal";
+            this.Text = "Envio de mensajes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

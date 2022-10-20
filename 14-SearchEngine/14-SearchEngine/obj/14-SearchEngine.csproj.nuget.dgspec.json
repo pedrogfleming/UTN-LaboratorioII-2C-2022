@@ -48,6 +48,14 @@
             "Lucene.Net": {
               "target": "Package",
               "version": "[3.0.3, )"
+            },
+            "Lucene.Net.Contrib": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
+            "Lucene.Net.Linq": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             }
           },
           "imports": [
