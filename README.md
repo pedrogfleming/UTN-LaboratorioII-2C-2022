@@ -14,4 +14,8 @@ Los ejercicios aquí resueltos no serán exigidos pero son libres de usarlos, es
 -  [Ejemplo de uso de la interfaz IEnumerable e ICollection](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/10-IEnumerableEjemplo/10-IEnumerableEjemplo/Program.cs)
 -  [Ejemplo de como implementar controles personalizados para winforms](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/11-CustomControls-Ejemplo/11-CustomControls-Ejemplo/MyCustomerInfoUserControl.cs)
 -  [Ejemplo de inyeccion de dependencia configurando la vista para winforms o consola según se especifique](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/12-Interfaces-MultipleVistas)
-- 
+-  [Ejemplo de uso de .Contains() de LINQ](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/13-LINQ-Contains/13-LINQ-Contains/Program.cs)
+-  [Ejemplo de como un elemento de una lista apunta a la misma dirección de memoria que el objeto que se agrego](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/15-ReferenceObjectsInLists/15-ReferenceObjectsInLists/Program.cs)
+-  [Demo de uso de eventos para manejar una sala de chat con winforms](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/16-SalaDeChat/16-SalaDeChat)
+-  [Demo de uso de delegados para modificar un producto desde otro form y actualizar el datagridview principal en el form principal](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/17-DelegadosEjemplo-FiltradoDeDatos/Vista/Vista)
+-  [Demo de uso de unitTest con MsUnit ](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/EShop)
