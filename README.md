@@ -7,6 +7,8 @@ Los ejercicios aquí resueltos no serán exigidos pero son libres de usarlos, es
 ###### Librerias usadas
 - LINQ https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/concepts/linq/
 
+###### Demos y ejemplos:
+
 -  [I01 - Validador de rangos Resuelto usando LINQ](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/01-ValidadorDeRangos/01-ValidadorDeRangos/Program.cs).
 -  [Ejercicio A01 - Vienen con sistema de auto-navegación resuelto diseñando las clases por capas](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/04-A01-VienenConSistemaDeAuto-Navegacion/A01-Camioneros/A01-Camioneros/Program.cs)
 -  [Ejercicio I03 - ¡A contar palabras! resuelto usando Dictionary y métodos de formateo de strings](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/blob/main/05-I03-A-Contar-Palabras/I03-A_Contar_Palabras/Form-ContarPalabras/FormContador.cs)
