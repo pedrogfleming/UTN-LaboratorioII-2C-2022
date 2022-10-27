@@ -35,6 +35,7 @@ namespace _16_SalaDeChat
                 if (_publicacion.AgregarComentario(this,comentario))
                 {
                     MessageBox.Show("Enviado");
+                    rtxMensajeAEnviar.Text = String.Empty;
                 }
                 else
                 {

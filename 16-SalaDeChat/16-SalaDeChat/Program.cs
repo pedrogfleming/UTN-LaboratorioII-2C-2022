@@ -20,7 +20,7 @@ namespace _16_SalaDeChat
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ForoForm(u2));
+            Application.Run(new SalaChatForm(u2));
         }
     }
 }
