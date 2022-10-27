@@ -15,7 +15,6 @@ namespace Mensajeria
         public Guid Id { get; set; }
         public string nickName { get; set; }
         public string email { get; set; }
-        public EnviarMensaje Enviar { get; set; }
 
         public static bool operator ==(Usuario u1, Usuario u2)
         {

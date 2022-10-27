@@ -30,6 +30,7 @@
         {
             this.lstPublicacion = new System.Windows.Forms.ListBox();
             this.btnSimularInteracion = new System.Windows.Forms.Button();
+            this.btnTercerUsuario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstPublicacion
@@ -52,11 +53,22 @@
             this.btnSimularInteracion.UseVisualStyleBackColor = true;
             this.btnSimularInteracion.Click += new System.EventHandler(this.btnSimularInteracion_Click);
             // 
+            // btnTercerUsuario
+            // 
+            this.btnTercerUsuario.Location = new System.Drawing.Point(740, 154);
+            this.btnTercerUsuario.Name = "btnTercerUsuario";
+            this.btnTercerUsuario.Size = new System.Drawing.Size(120, 108);
+            this.btnTercerUsuario.TabIndex = 2;
+            this.btnTercerUsuario.Text = "Simular tercer Usuario";
+            this.btnTercerUsuario.UseVisualStyleBackColor = true;
+            this.btnTercerUsuario.Click += new System.EventHandler(this.btnTercerUsuario_Click);
+            // 
             // ForoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 550);
+            this.Controls.Add(this.btnTercerUsuario);
             this.Controls.Add(this.btnSimularInteracion);
             this.Controls.Add(this.lstPublicacion);
             this.Name = "ForoForm";
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.ListBox lstPublicacion;
         private System.Windows.Forms.Button btnSimularInteracion;
+        private System.Windows.Forms.Button btnTercerUsuario;
     }
 }

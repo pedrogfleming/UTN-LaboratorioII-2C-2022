@@ -15,10 +15,11 @@ namespace Mensajeria
         {
             Usuarios = new()
             {
-                new Usuario("mtnbik", "mtnbik@storesup.fun"),
+                new Usuario("mateobik", "mtnbik@storesup.fun"),
                 new Usuario("godjar","godjar@honghukangho.com"),
                 new Usuario("edarmon","edarmon@gotcertify.com"),
                 new Usuario("thomas82","thomas82@affogatgaroth.com")
+                
             };
             Publicaciones = new();
         }
