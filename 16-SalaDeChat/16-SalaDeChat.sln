@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-SalaDeChat", "16-SalaDeChat\16-SalaDeChat.csproj", "{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensajeria", "Mensajeria\Mensajeria.csproj", "{60FAE275-98AA-489D-B11C-8E63A926FC4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB5582E3-3B1D-4B25-B7C6-36E00635DE13}
+	EndGlobalSection
+EndGlobal
