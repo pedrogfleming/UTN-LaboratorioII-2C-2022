@@ -73,6 +73,7 @@
             this.Controls.Add(this.lstPublicacion);
             this.Name = "ForoForm";
             this.Text = "ForoForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ForoForm_FormClosed);
             this.Load += new System.EventHandler(this.ForoForm_Load);
             this.ResumeLayout(false);
 

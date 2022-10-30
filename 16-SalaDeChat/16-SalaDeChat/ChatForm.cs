@@ -14,8 +14,8 @@ namespace ChatView
     public partial class ChatForm : Form
     {
         private Usuario Usuario { get; init; }
-        private readonly IPublicacion _publicacion;
-        public ChatForm(Usuario u1, IPublicacion publicacion)
+        private readonly INotificarNuevoComentarioEvent _publicacion;
+        public ChatForm(Usuario u1, INotificarNuevoComentarioEvent publicacion)
         {            
             Usuario = u1;            
             _publicacion = publicacion;

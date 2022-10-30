@@ -2,7 +2,7 @@
 
 namespace Mensajeria
 {
-    public interface IPublicacion
+    public interface INotificarNuevoComentarioEvent
     {
         bool AgregarComentario(object formSender,Comentario c);
     }

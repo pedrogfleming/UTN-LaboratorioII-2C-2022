@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-SalaDeChat", "16-SalaDeChat\16-SalaDeChat.csproj", "{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16-SalaDeChat", "16-SalaDeChat\16-SalaDeChat.csproj", "{1CA8FDD2-0501-492E-9DC0-DCFD4861346D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mensajeria", "Mensajeria\Mensajeria.csproj", "{60FAE275-98AA-489D-B11C-8E63A926FC4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mensajeria", "Mensajeria\Mensajeria.csproj", "{60FAE275-98AA-489D-B11C-8E63A926FC4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatTest", "ChatTest\ChatTest.csproj", "{497735DA-A1B5-4087-B45E-31774E592880}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60FAE275-98AA-489D-B11C-8E63A926FC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{497735DA-A1B5-4087-B45E-31774E592880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497735DA-A1B5-4087-B45E-31774E592880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497735DA-A1B5-4087-B45E-31774E592880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497735DA-A1B5-4087-B45E-31774E592880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

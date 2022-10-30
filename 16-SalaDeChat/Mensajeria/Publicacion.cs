@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Mensajeria
 {
-    public class Publicacion : IPublicacion
+    public class Publicacion : INotificarNuevoComentarioEvent
     {
         public event EventHandler<Comentario> NuevoMensajeEvent;
         public Guid Id { get; set; }

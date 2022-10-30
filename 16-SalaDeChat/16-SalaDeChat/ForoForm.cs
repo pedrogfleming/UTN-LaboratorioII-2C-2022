@@ -98,5 +98,11 @@ namespace ChatView
                  RedManager.Usuarios.FirstOrDefault(u => u.nickName == "edarmon")
                  ,_Publicacion).Show();
         }
+
+        private void ForoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Cuando se cierre el formulario, desuscribimos el metodo al evento para liberar los recursos
+            _Publicacion.NuevoMensajeEvent += AgregarComentario;
+        }
     }
 }
