@@ -1,4 +1,4 @@
-﻿using _16_SalaDeChat.Vista;
+﻿using ChatView.Vista;
 using Mensajeria;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _16_SalaDeChat
+namespace ChatView
 {
     public partial class ForoForm : Form
     {

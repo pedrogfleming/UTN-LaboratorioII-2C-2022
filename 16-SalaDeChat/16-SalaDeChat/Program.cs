@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _16_SalaDeChat
+namespace ChatView
 {
     internal static class Program
     {
@@ -20,7 +20,7 @@ namespace _16_SalaDeChat
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SalaChatForm(u2));
+            Application.Run(new ForoForm(u2));
         }
     }
 }

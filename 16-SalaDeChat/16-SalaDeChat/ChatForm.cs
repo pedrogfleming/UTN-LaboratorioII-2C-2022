@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _16_SalaDeChat
+namespace ChatView
 {
     public partial class ChatForm : Form
     {

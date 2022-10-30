@@ -1,6 +1,6 @@
-﻿namespace _16_SalaDeChat
+﻿namespace ChatView
 {
-    partial class SalaChatForm
+    partial class ForoForm
     {
         /// <summary>
         /// Required designer variable.

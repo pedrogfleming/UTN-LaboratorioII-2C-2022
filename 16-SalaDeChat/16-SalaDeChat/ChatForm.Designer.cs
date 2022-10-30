@@ -1,4 +1,4 @@
-﻿namespace _16_SalaDeChat
+﻿namespace ChatView
 {
     partial class ChatForm
     {

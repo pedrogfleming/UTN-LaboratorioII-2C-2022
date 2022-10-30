@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _16_SalaDeChat.Vista
+namespace ChatView.Vista
 {
     /// <summary>
     /// Cree esta clase para mostrar mas facil los datos en el listbox

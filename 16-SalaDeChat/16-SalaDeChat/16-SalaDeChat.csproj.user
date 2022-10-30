@@ -4,7 +4,7 @@
     <Compile Update="ChatForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SalaChatForm.cs">
+    <Compile Update="ForoForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
