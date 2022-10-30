@@ -7,17 +7,24 @@ namespace Mensajeria
     public class Publicacion : INotificarNuevoComentarioEvent
     {
         public event Refrescar NuevoMensajeEvent;
-        public Guid Id { get; set; }
         /// <summary>
         /// Declaro como HashSet los comentarios para que sean unicos
         /// </summary>
-        public HashSet<Comentario> Comentarios { get; init; }
+        private HashSet<Comentario> comentarios;
+        public Guid Id { get; set; }
+        /// <summary>
+        /// Uso una IReadOnlyCollection porque de esa manera obligo a usar siempre el metodo AgregarComentario(c) 
+        /// Cuando se quiere agregar un nuevo comentario a la coleccion.
+        /// De esa manera, no se puede agregar o quitar elementos a la coleccion desde afuera de la clase
+        /// Lo que asegura que siempre se invoque el evento Refrescar NuevoMensajeEvent al agregar
+        /// </summary>
+        public IReadOnlyCollection<Comentario> Comentarios { get { return comentarios; } } 
         public string Titulo { get; set; }
 
         public Publicacion(string titulo)
         {
             Id = Guid.NewGuid();
-            Comentarios = new();
+            comentarios = new();
             Titulo = titulo;
         }
         /// <summary>
@@ -32,7 +39,7 @@ namespace Mensajeria
             //Siempre chequeamos que el evento no venga null
             if(NuevoMensajeEvent is not null)
             {
-                Comentarios.Add(c);
+                comentarios.Add(c);
                 NuevoMensajeEvent.Invoke();
                 return true;
             }

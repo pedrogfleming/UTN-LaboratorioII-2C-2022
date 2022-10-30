@@ -1,6 +1,8 @@
 using Mensajeria;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChatTest
 {
@@ -8,26 +10,21 @@ namespace ChatTest
     public class ComunicacionTests
     {
         private readonly Publicacion _publicacion;
-        private List<Comentario> _comentarios;
+        private List<Comentario> UltimosComentarios;
 
         public ComunicacionTests()
         {
             _publicacion = new Publicacion("Restaurantes en Buenos aires");
-            _publicacion.NuevoMensajeEvent += AgregarComentario;
+            _publicacion.NuevoMensajeEvent += () => UltimosComentarios = _publicacion.Comentarios.ToList();
         }
-        /// <summary>
-        /// Agrega un comentario a la publicacion enviado desde otro formulario
-        /// </summary>
-        /// <param name="sender">Data del formulario que envio el comentario</param>
-        /// <param name="comentario"> El comentario a agregar a la publicacion</param>
-        private void AgregarComentario(object sender, Comentario comentario)
-        {
-            _publicacion.Comentarios.Add(comentario);
-        }
+
         [TestMethod]
-        public void GenerarNuevoMensajeTestOk()
+        public void ActualizarListaAlAgregarMensaje()
         {
-            
+            Usuario u = new("raichu20", "raichu@gmail.com");
+            Comentario c = new(DateTime.Now.AddDays(-100), "Hay uno muy bueno en avenida boedo", u.Id);
+            _publicacion.AgregarComentario(c);
+            Assert.IsTrue(UltimosComentarios.SequenceEqual(_publicacion.Comentarios));
         }
     }
 }
