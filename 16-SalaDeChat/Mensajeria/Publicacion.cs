@@ -18,7 +18,7 @@ namespace Mensajeria
         /// De esa manera, no se puede agregar o quitar elementos a la coleccion desde afuera de la clase
         /// Lo que asegura que siempre se invoque el evento Refrescar NuevoMensajeEvent al agregar
         /// </summary>
-        public IReadOnlyCollection<Comentario> Comentarios { get { return comentarios; } } 
+        public IReadOnlyCollection<Comentario> Comentarios { get { return comentarios; } }
         public string Titulo { get; set; }
 
         public Publicacion(string titulo)
@@ -37,13 +37,14 @@ namespace Mensajeria
         public bool AgregarComentario(Comentario c)
         {
             //Siempre chequeamos que el evento no venga null
-            if(NuevoMensajeEvent is not null)
+            if (NuevoMensajeEvent is not null && comentarios.Add(c))
             {
-                comentarios.Add(c);
                 NuevoMensajeEvent.Invoke();
                 return true;
             }
-            //Si el evento no tiene asociado ningun metodeo, no se agrega el comentario y se retorna false
+            //Si el evento no tiene asociado ningun metodeo,
+            // o si ya existe el comentario en la publicacion
+            //no se agrega el comentario y se retorna false
             return false;
         }
 
@@ -51,7 +52,7 @@ namespace Mensajeria
         {
             return new Comentario(
                 DateTime.Now.AddDays(-2),
-                "Hola, como debuggeo en C#", 
+                "Hola, como debuggeo en C#",
                 RedManager.Usuarios.FirstOrDefault().Id);
         }
     }

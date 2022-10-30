@@ -23,7 +23,11 @@ namespace Mensajeria
             };
             Publicaciones = new();
         }
-
+        /// <summary>
+        /// Buscar el nickname segun el id del usuario pasado por parametro
+        /// </summary>
+        /// <param name="idUsuario">Id del usuario que buscamos obtener su nickname</param>
+        /// <returns>El nickname del id usuario solicitado, si no null</returns>
         public static string ObtenerNickName_PorId(Guid idUsuario)
         {
             return Usuarios.FirstOrDefault(u => u.Id == idUsuario)?.nickName;

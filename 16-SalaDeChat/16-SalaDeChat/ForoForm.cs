@@ -62,6 +62,7 @@ namespace ChatView
         /// <param name="e"></param>
         private void lstPublicacion_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            //No guardo la referencia del nuevo form porque no me interesa para la ejecucion del programa
             new ChatForm(usuario, _Publicacion).Show();
         }
         /// <summary>
@@ -73,6 +74,7 @@ namespace ChatView
         {
             Guid IdusuarioCreadorDelPost = _Publicacion.Comentarios.FirstOrDefault().IdUsuario;
             Usuario usuarioCreadorDelPost = RedManager.Usuarios.FirstOrDefault(u => u.Id == IdusuarioCreadorDelPost);
+            //No guardo la referencia del nuevo form porque no me interesa para la ejecucion del programa
             new ChatForm(usuarioCreadorDelPost, _Publicacion).Show();
         }
         /// <summary>
@@ -82,6 +84,7 @@ namespace ChatView
         /// <param name="e"></param>
         private void btnTercerUsuario_Click(object sender, EventArgs e)
         {
+            //No guardo la referencia del nuevo form porque no me interesa para la ejecucion del programa
             new ChatForm(
                  RedManager.Usuarios.FirstOrDefault(u => u.nickName == "edarmon")
                  ,_Publicacion).Show();
