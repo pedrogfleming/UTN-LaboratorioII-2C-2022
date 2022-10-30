@@ -6,7 +6,7 @@ namespace Mensajeria
 {
     public class Publicacion : INotificarNuevoComentarioEvent
     {
-        public event EventHandler<Comentario> NuevoMensajeEvent;
+        public event Refrescar NuevoMensajeEvent;
         public Guid Id { get; set; }
         /// <summary>
         /// Declaro como HashSet los comentarios para que sean unicos
@@ -21,17 +21,19 @@ namespace Mensajeria
             Titulo = titulo;
         }
         /// <summary>
-        /// Agregar un comentario a la publicacion si no existe. Se invoca adentro el evento de actualizar la vista de la publicacion
+        /// Agregar un comentario a la publicacion si no existe. 
+        /// Se invoca adentro el evento de actualizar la vista de la publicacion
         /// </summary>
         /// <param name="formSender">Data del origen del evento, en este caso, el formulario origen</param>
         /// <param name="c"> El comentario a agregar</param>
         /// <returns></returns>
-        public bool AgregarComentario(object formSender,Comentario c)
+        public bool AgregarComentario(Comentario c)
         {
             //Siempre chequeamos que el evento no venga null
             if(NuevoMensajeEvent is not null)
             {
-                NuevoMensajeEvent.Invoke(formSender, c);
+                Comentarios.Add(c);
+                NuevoMensajeEvent.Invoke();
                 return true;
             }
             //Si el evento no tiene asociado ningun metodeo, no se agrega el comentario y se retorna false

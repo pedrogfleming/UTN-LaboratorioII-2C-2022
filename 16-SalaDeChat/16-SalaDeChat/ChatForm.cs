@@ -32,7 +32,7 @@ namespace ChatView
             if (!string.IsNullOrEmpty(rtxMensajeAEnviar.Text))
             {
                 var comentario =new Comentario(DateTime.Now, rtxMensajeAEnviar.Text, Usuario.Id);
-                if (_publicacion.AgregarComentario(this,comentario))
+                if (_publicacion.AgregarComentario(comentario))
                 {
                     MessageBox.Show("Enviado");
                     rtxMensajeAEnviar.Text = String.Empty;

@@ -22,7 +22,7 @@ namespace ChatView
         /// <summary>
         /// Evento cuando se agrega un nuevo comentario a la publicacion
         /// </summary>
-        private event EventHandler<Comentario> NuevoMensajeEvent;
+        private event Refrescar NuevoMensajeEvent;
         public ForoForm(Usuario u)
         {
             InitializeComponent();
@@ -32,24 +32,12 @@ namespace ChatView
             RedManager.Publicaciones.Add(_Publicacion);
             #endregion
 
-            _Publicacion.NuevoMensajeEvent += AgregarComentario;
+            _Publicacion.NuevoMensajeEvent += RefrescarPublicacion;
             usuario = u;
         }
         private void ForoForm_Load(object sender, EventArgs e)
         {
             RefrescarPublicacion();
-        }
-        /// <summary>
-        /// Agrega un comentario a la publicacion enviado desde otro formulario
-        /// </summary>
-        /// <param name="sender">Data del formulario que envio el comentario</param>
-        /// <param name="comentario"> El comentario a agregar a la publicacion</param>
-        private void AgregarComentario(object sender,Comentario comentario)
-        {
-            if (_Publicacion.Comentarios.Add(comentario))
-            {
-                RefrescarPublicacion();
-            }
         }
         /// <summary>
         /// Refresca el listbox de la publicacion
@@ -102,7 +90,7 @@ namespace ChatView
         private void ForoForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             //Cuando se cierre el formulario, desuscribimos el metodo al evento para liberar los recursos
-            _Publicacion.NuevoMensajeEvent += AgregarComentario;
+            _Publicacion.NuevoMensajeEvent -= RefrescarPublicacion;
         }
     }
 }
