@@ -22,11 +22,6 @@ namespace ChatView
             InitializeComponent();
             this.Text = Usuario.nickName;
         }
-        /// <summary>
-        /// Sender
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnEnviarMensaje_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(rtxMensajeAEnviar.Text))

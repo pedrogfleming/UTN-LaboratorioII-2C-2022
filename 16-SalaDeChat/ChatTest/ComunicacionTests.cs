@@ -15,6 +15,7 @@ namespace ChatTest
         public ComunicacionTests()
         {
             _publicacion = new Publicacion("Restaurantes en Buenos aires");
+            //Suscribo una funcion anonima al evento para poder testear la invocacion del evento
             _publicacion.NuevoMensajeEvent += () => UltimosComentarios = _publicacion.Comentarios.ToList();
         }
 
