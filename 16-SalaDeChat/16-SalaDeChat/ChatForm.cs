@@ -17,7 +17,7 @@ namespace ChatView
         private readonly INotificarNuevoComentarioEvent _publicacion;
         public ChatForm(Usuario u1, INotificarNuevoComentarioEvent publicacion)
         {            
-            Usuario = u1;            
+            Usuario = u1;
             _publicacion = publicacion;
             InitializeComponent();
             this.Text = Usuario.nickName;

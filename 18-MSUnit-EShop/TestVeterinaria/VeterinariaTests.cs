@@ -9,6 +9,13 @@ namespace TestVeterinaria
     [TestClass]
     public class VeterinariaTests
     {
+        public Mascota _mascota;
+
+        [TestInitialize]
+        public void Setup()
+        {
+            _mascota = new Mascota("Lalo", 2, Guid.NewGuid());
+        }
         [TestMethod]
         public void Test_Chequear_PreCarga_Mascotas_Ok()
         {
@@ -88,6 +95,17 @@ namespace TestVeterinaria
             //Arrange: 
             Mascota m1 = new("Lalo", 2, Guid.NewGuid());
             Mascota m2 = new("Panchito", 3, Guid.NewGuid());
+            //Act:
+            bool resultado = m1 == m2;
+            //Assert:
+            Assert.IsFalse(resultado);
+        }
+        [TestMethod]
+        [DataRow("Lalo", 2, "d13108f4-40a5-4942-9456-0cdc9a28829c")]
+        public void Test_Mascotas_Distintas_Parametrizado_Ok(string name,int edad, Guid id)
+        {
+            //Arrange: 
+            Mascota m1 = new(name, edad, id);
             //Act:
             bool resultado = m1 == m2;
             //Assert:
