@@ -15,8 +15,12 @@ namespace WinFormsApp1
 {
     public partial class RelojeroForm : Form
     {
+        CancellationTokenSource tokenSource;
+        CancellationToken token;
         public RelojeroForm()
         {
+            tokenSource = new CancellationTokenSource();
+            CancellationToken token = tokenSource.Token;
             InitializeComponent();
         }
 
@@ -25,11 +29,11 @@ namespace WinFormsApp1
             Task.Run(() =>
             {
                 AsignarHora();
-            });
+            },this.token);
         }
         public void AsignarHora()
         {
-            while (true)
+            while (!tokenSource.IsCancellationRequested)
             {
                 Thread.Sleep(1000);
                 if (this.lblHora.InvokeRequired)
@@ -54,6 +58,23 @@ namespace WinFormsApp1
                     this.lblHora.Text = DateTime.UtcNow.ToString();
                 }
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            tokenSource.Cancel();
+            MessageBox.Show("Cancelado");
+
+        }
+
+        private void btnReanudar_Click(object sender, EventArgs e)
+        {
+            tokenSource = new CancellationTokenSource();
+            CancellationToken token = tokenSource.Token;
+            Task.Run(() =>
+            {
+                AsignarHora();
+            }, this.token);
         }
     }
 }

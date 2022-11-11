@@ -44,40 +44,40 @@ namespace _20_RompiendoHilos
             #endregion
 
             #region Ejemplo CancellToken 
-            //CancellationTokenSource tokenSource = new CancellationTokenSource();
-            //CancellationToken token = tokenSource.Token;
-            //int i = 0;
-            //Task t1 = new Task(() =>
-            //{
+            CancellationTokenSource tokenSource = new CancellationTokenSource();
+            CancellationToken token = tokenSource.Token;
+            int i = 0;
+            Task t1 = new Task(() =>
+            {
 
-            //    while (!tokenSource.IsCancellationRequested)
-            //    {
-            //        Console.WriteLine($"T1 - iteracion {i} dentro del t1");
-            //        i++;
-            //    }
-            //}, token);
-            //Task t2 = new Task(() =>
-            //{
-            //    while (i < 10)
-            //    {
-            //        Console.WriteLine($"T2 - Todavia no puedo cancelar t1, i= {i}");
-            //    }
-            //    Console.WriteLine($"Se cancela T1, i = {i}");
-            //    tokenSource.Cancel();
-            //});
+                while (!tokenSource.IsCancellationRequested)
+                {
+                    Console.WriteLine($"T1 - iteracion {i} dentro del t1");
+                    i++;
+                }
+            }, token);
+            Task t2 = new Task(() =>
+            {
+                while (i < 10)
+                {
+                    Console.WriteLine($"T2 - Todavia no puedo cancelar t1, i= {i}");
+                }
+                Console.WriteLine($"Se cancela T1, i = {i}");
+                tokenSource.Cancel();
+            });
 
-            //List<Task> tasks = new();
-            //tasks.Add(t1);
-            //tasks.Add(t2);
-            //foreach (Task t in tasks)
-            //{
-            //    t.Start();
-            //}
+            List<Task> tasks = new();
+            tasks.Add(t1);
+            tasks.Add(t2);
+            foreach (Task t in tasks)
+            {
+                t.Start();
+            }
 
-            //Task.WaitAll(tasks.ToArray());
+            Task.WaitAll(tasks.ToArray());
 
             #endregion
-            
+
         }
     }
 }
