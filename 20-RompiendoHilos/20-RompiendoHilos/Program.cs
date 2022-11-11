@@ -47,7 +47,7 @@ namespace _20_RompiendoHilos
             CancellationTokenSource tokenSource = new CancellationTokenSource();
             CancellationToken token = tokenSource.Token;
             int i = 0;
-            Task t1 = new Task(() =>
+            Task tA = new Task(() =>
             {
 
                 while (!tokenSource.IsCancellationRequested)
@@ -56,7 +56,7 @@ namespace _20_RompiendoHilos
                     i++;
                 }
             }, token);
-            Task t2 = new Task(() =>
+            Task tB = new Task(() =>
             {
                 while (i < 10)
                 {
@@ -66,15 +66,15 @@ namespace _20_RompiendoHilos
                 tokenSource.Cancel();
             });
 
-            List<Task> tasks = new();
-            tasks.Add(t1);
-            tasks.Add(t2);
+            List<Task> tasks2 = new();
+            tasks2.Add(tA);
+            tasks2.Add(tB);
             foreach (Task t in tasks)
             {
                 t.Start();
             }
 
-            Task.WaitAll(tasks.ToArray());
+            Task.WaitAll(tasks2.ToArray());
 
             #endregion
 
