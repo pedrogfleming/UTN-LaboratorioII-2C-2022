@@ -46,7 +46,7 @@ namespace WinFormsApp1
                         this.lblHora.Text = DateTime.UtcNow.ToString();
                     });
 
-                    var result = this.lblHora.BeginInvoke(ac);
+                    this.lblHora.BeginInvoke(ac);
                     #endregion
                 }
                 else
