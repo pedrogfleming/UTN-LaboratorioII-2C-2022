@@ -12,22 +12,23 @@ namespace Vista
 {
     public partial class Form1 : Form
     {        
-        private int totalNotificaciones;
+        private int totalNotificacionesSinLeer;
         private List<string> historialNotificaciones;
         public Form1()
         {
-            totalNotificaciones = 0;
+            totalNotificacionesSinLeer = 0;
             historialNotificaciones = new List<string>();
             InitializeComponent();
         }
 
         private void lbNotificaciones_Click(object sender, EventArgs e)
         {
-            if(totalNotificaciones > 0)
+            if(totalNotificacionesSinLeer > 0)
             {
                 StringBuilder sb = new();
                 historialNotificaciones.ForEach(n => sb.AppendLine(n));
                 MessageBox.Show(sb.ToString());
+                totalNotificacionesSinLeer = 0;
             }
         }
         /// <summary>
@@ -37,8 +38,8 @@ namespace Vista
         /// <param name="notificacion"></param>
         private void AgregarNotificacion(string notificacion)
         {
-            totalNotificaciones++;
-            lbNotificaciones.Text = $"Notificaciones({totalNotificaciones})";
+            totalNotificacionesSinLeer++;
+            lbNotificaciones.Text = $"Notificaciones({totalNotificacionesSinLeer})";
             historialNotificaciones.Add(notificacion);
         }
 
