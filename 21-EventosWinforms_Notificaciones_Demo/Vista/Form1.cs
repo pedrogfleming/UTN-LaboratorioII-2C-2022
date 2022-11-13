@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Vista
 {
+    /// <summary>
+    /// La clase suscriptora al evento
+    /// </summary>
     public partial class Form1 : Form
     {        
         private int totalNotificacionesSinLeer;
@@ -46,6 +49,7 @@ namespace Vista
         private void btnAbrirForm_Click(object sender, EventArgs e)
         {
            Form2 f2 = new Form2();
+           // Suscribimos el event handler al evento
            f2.notificacionEntrante += AgregarNotificacion;
            f2.Show();
         }
