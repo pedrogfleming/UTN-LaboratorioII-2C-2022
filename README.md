@@ -22,3 +22,5 @@
 -  [Demo de uso de eventos para manejar una sala de chat con winforms](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/16-SalaDeChat/16-SalaDeChat)
 -  [Demo de uso de delegados para modificar un producto desde otro form y actualizar el datagridview principal en el form principal](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/17-DelegadosEjemplo-FiltradoDeDatos/Vista/Vista)
 -  [Demo de uso de unitTest con MSUnit ](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/18-MSUnit-EShop)
+-  [Demo ejemplo de uso de hilos y cancellation token](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/20-RompiendoHilos)
+- [Demo ejemplo de eventos vs delegados para notificar cambios entre forms](https://github.com/pedrogfleming/UTN-LaboratorioII-2C-2022/tree/main/21-EventosWinforms_Notificaciones_Demo)
