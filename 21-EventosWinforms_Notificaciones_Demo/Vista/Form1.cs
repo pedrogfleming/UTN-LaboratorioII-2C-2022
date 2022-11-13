@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,12 +46,34 @@ namespace Vista
             lbNotificaciones.Text = $"Notificaciones({totalNotificacionesSinLeer})";
             historialNotificaciones.Add(notificacion);
         }
+        /// <summary>
+        /// Event Handler
+        /// El metodo que se ejecuta cuando se invoca el evento
+        /// </summary>
+        /// <param name="notificacion"></param>
+        private void GuardarNuevaNotificacionEnTxt(string notificacion)
+        {
+            try
+            {
+                string rutaDirectorio = AppDomain.CurrentDomain.BaseDirectory;
+                string rutaArchivo = Path.Combine(rutaDirectorio, "historialNotificaciones.txt");
+                using (StreamWriter streamWriter = new StreamWriter(rutaArchivo, true))
+                {
+                    streamWriter.WriteLine(notificacion);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         private void btnAbrirForm_Click(object sender, EventArgs e)
         {
            Form2 f2 = new Form2();
            // Suscribimos el event handler al evento
            f2.notificacionEntrante += AgregarNotificacion;
+           f2.notificacionEntrante += GuardarNuevaNotificacionEnTxt;
            f2.Show();
         }
     }
